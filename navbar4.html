@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Navbar</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        body
+        {
+            background-color:rgb(200, 200, 200);
+        }
+        .navbar
+        {
+            color: white !important;
+            padding: 5px;
+            background-color: #5bbe74;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo img
+        {
+            width: 40px;
+            height: 40px;
+        }
+        .navbar .logo, .navbar .login
+        {
+            margin: 0px 150px;
+        }
+        .cards
+        {
+            display : flex;
+            flex-direction: row;
+            margin: 50px 100px;
+        }
+         .cards .card
+        {
+            
+            margin: 0px 50px;
+            border-radius: 5px;
+            padding: 10px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            /* justify-content: center; */
+            /* align-items: center; */
+            justify-content: space-between;
+            /* justify-content: center; */
+            height: 250px;
+            width: 250px;
+            background-color: white;
+        }
+         table, th,td{
+             padding: 10px;
+             border-collapse: collapse;
+            border: solid 1px black;
+            color: black;
+        }
+        .btn
+        {
+            font-weight: bold;
+            padding: 10px;
+            bottom: 0;
+            background-color:orange;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            color:white;
+            cursor: not-allowed;
+            margin-bottom: 0;
+        }
+        .btn2
+        {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="login">
+                <H1>Vishal Waykar</H1>
+            </div>
+        </nav>
+        <section class="cards">
+            <div class="card">
+                <h3>
+                    Mock - Marathi</caption>
+                </h3>
+                <table class="testTable">
+                    <tr>
+                        <th>Test Assigned</th> 
+                        <th>5</th> 
+                    </tr>
+                    <tr>
+                        <th>Test Taken</th> 
+                        <th>0</th> 
+                    </tr>
+                </table>
+                <h3>60 min</h3>
+                <button class="btn">
+                    continue
+                </button>
+            </div>
+            <div class="card">
+                <h3>
+                    Mock - English</caption>
+                </h3>
+                <table class="testTable">
+                    <tr>
+                        <th>Test Assigned</th> 
+                        <th>5</th> 
+                    </tr>
+                    <tr>
+                        <th>Test Taken</th> 
+                        <th>5</th> 
+                    </tr>
+                </table>
+                <h3>60 min</h3>
+                <button class="btn btn2">
+                    continue
+                </button>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
